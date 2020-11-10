@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    margin-left: 70px;
+}
+.list{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 9999;
+    background-color:#00629b ;
+
+}
+.list ul {
+    list-style: none;    
+}
+.list ul a li{
+  display: inline;
+  color:white;
+  margin:40px;
+  transition: 0.6s;
+  
+}
+.list ul a li:hover {
+    color:#FFA200;
+    cursor: pointer;
+    font-size: large;
+}
+.list ul a {
+    text-decoration: none !important;
+}
+.events{
+    display: flex;
+    justify-content: space-evenly;
+    padding:30px;
+}
+.partone,.parttwo{
+    text-align: center;
+    border:#FFA200 solid 1px ;
+    border-radius: 10px;
+    width: 350px;
+    padding: 20px;
+    animation: float 6s ease-in-out infinite;
+    transition: 0.6s;
+    
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-10px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+.partone:hover,.parttwo:hover{
+    background-color: #FFA200;
+    color:white;
+    cursor: pointer;
+}
+h2{
+    color:#FFA200;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    font-family: 'Roboto', sans-serif; 
+    color:blueviolet;
+}
+p{
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.text p {
+    padding:30px;
+    width:90%;
+    font-family: 'Open Sans', sans-serif;
+}
+.contactus{
+    display: flex;
+    justify-content: flex-start;
+}
+.myinput{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+
+}
+.myinput textarea,input{
+     padding:10px;
+     margin-bottom: 20px;
+     width: 60em;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     border-radius: 5px;
+}    
+textarea,input:focus{
+     outline:none; 
+}
+button{
+    background-color: blueviolet;
+    color:white;
+    border:none;
+    padding:10px;
+    margin-top:10px;
+    border-radius: 5px;
+}
+h4{
+    font-family: 'Heebo', sans-serif;
+}
+.mymap{
+    margin:30px;
+   
+
+}
+.mymap a {
+    font-family: 'Heebo', sans-serif;
+    
+}
+.mymap h4,a{
+display: inline;}
